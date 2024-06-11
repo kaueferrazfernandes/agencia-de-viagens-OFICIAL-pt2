@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência de Viagens</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .pacotes, .viagens {
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .pacotes__titulo, .viagens__titulo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .pacotes__lista, .viagens__lista {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .pacote, .viagem {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 300px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .pacote__imagem, .viagem__imagem {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .pacote__detalhes, .viagem__detalhes {
+      padding: 15px;
+    }
+    .pacote__titulo, .viagem__titulo {
+      font-size: 1.25em;
+      margin-bottom: 10px;
+    }
+    .pacote__descricao, .viagem__descricao {
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .pacote__preco, .viagem__preco {
+      font-size: 1.5em;
+      color: #e91e63;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+    <li class="lista-menu__titulo">Categorias</li>
+    <li class="lista-menu__item">
+        <a href="index.html" class="lista-menu__link">Início</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="quemsomos.html" class="lista-menu__link">Quem Somos</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="pacotes.html" class="lista-menu__link">Pacotes</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="viagens.html" class="lista-menu__link">Viagens</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="contatos.html" class="lista-menu__link">Contatos</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="contatos.html" class="lista-menu__link">Contatos</a>
+    </li>
+</ul>
+      <img src="img/Logo.svg" alt="Logo da Agencia" class="container__imagem">
+      <h1 class="container__titulo">Agência de viagens</h1>
+      <b class="class__titulo--negrito"></b>
+      <ul class="opções">
+  <input type="checkbox" id="opções-menu" class="opções__botão" />
+  <label for="opções-menu">
+    <li class="opções__item">Categorias</li>
+  </label>
+
+  <ul class="lista-menu">
+    <li class="lista-menu__item">
+      <a href="index.html" class="lista-menu__link">Início</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="quemsomos.html" class="lista-menu__link">Quem somos</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="pacotes.html" class="lista-menu__link">Pacotes</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="viagens.html" class="lista-menu__link">Viagens</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="contatos.html" class="lista-menu__link">Contatos</a>
+    </li>
+</ul>
+  <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+  <li class="opções__item">
+    <a href="#" class="opções__link">Minha estante</a>
+  </li>
+</ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde viajar?</h2>
+    <p class="banner__texto">Encontre em nossa agência onde você quer passar as próximas férias!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será seu próximo destino?">
+  </section>
+
+  <section class="pacotes">
+    <h2 class="pacotes__titulo">Pacotes de Viagens</h2>
+    <div class="pacotes__lista">
+      <div class="pacote">
+        <img src="img/caribedestino.jpeg" alt="Imagem do destino 1" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Praias do Caribe</h3>
+          <p class="pacote__descricao">Desfrute das belas praias do Caribe com este pacote incrível.</p>
+          <p class="pacote__preco">R$ 4.500,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/amazoniadestino.jpeg" alt="Imagem do destino 2" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Aventura na Amazônia</h3>
+          <p class="pacote__descricao">Explore a exuberante floresta amazônica com guias experientes.</p>
+          <p class="pacote__preco">R$ 3.200,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/europadestino.jpeg" alt="Imagem do destino 3" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Turismo na Europa</h3>
+          <p class="pacote__descricao">Conheça as principais cidades europeias em uma viagem inesquecível.</p>
+          <p class="pacote__preco">R$ 6.800,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="viagens">
+    <h2 class="viagens__titulo">Viagens Disponíveis</h2>
+    <div class="viagens__lista">
+      <div class="viagem">
+        <img src="img/parisdestino.jpeg" alt="Imagem da viagem 1" class="viagem__imagem">
+        <div class="viagem__detalhes">
+          <h3 class="viagem__titulo">Paris, França</h3>
+          <p class="viagem__descricao">Explore a cidade do amor e seus icônicos pontos turísticos.</p>
+          <p class="viagem__preco">R$ 7.500,00</p>
+        </div>
+      </div>
+      <div class="viagem">
+        <img src="img/novayorkdestino.jpeg" alt="Imagem da viagem 2" class="viagem__imagem">
+        <div class="viagem__detalhes">
+          <h3 class="viagem__titulo">Nova York, EUA</h3>
+          <p class="viagem__descricao">Descubra a cidade que nunca dorme com suas inúmeras atrações.</p>
+          <p class="viagem__preco">R$ 8.200,00</p>
+        </div>
+      </div>
+      <div class="viagem">
+        <img src="img/toquiodestino.jpeg" alt="Imagem da viagem 3" class="viagem__imagem">
+        <div class="viagem__detalhes">
+          <h3 class="viagem__titulo">Tóquio, Japão</h3>
+          <p class="viagem__descricao">Experimente a mistura de tradição e modernidade na capital japonesa.</p>
+          <p class="viagem__preco">R$ 9.300,00</p>
+        </div>
+      </div>
+      <div class="viagem">
+        <img src="img/sidneydestino.jpeg" alt="Imagem da viagem 4" class="viagem__imagem">
+        <div class="viagem__detalhes">
+          <h3 class="viagem__titulo">Sydney, Austrália</h3>
+          <p class="viagem__descricao">Desfrute das belas praias e atrações da vibrante Sydney.</p>
+          <p class="viagem__preco">R$ 6.800,00</p>
+        </div>
+      </div>
+      <div class="viagem">
+        <img src="img/cidadedocabodestino.jpeg" alt="Imagem da viagem 5" class="viagem__imagem">
+        <div class="viagem__detalhes">
+          <h3 class="viagem__titulo">Cidade do Cabo, África do Sul</h3>
+          <p class="viagem__descricao">Descubra a beleza natural e a rica história de Cidade do Cabo.</p>
+          <p class="viagem__preco">R$ 7.100,00</p>
+        </div>
+      </div>
+      <div class="viagem">
+        <img src="img/romadestino.jpeg" alt="Imagem da viagem 6" class="viagem__imagem">
+        <div class="viagem__detalhes">
+          <h3 class="viagem__titulo">Roma, Itália</h3>
+          <p class="viagem__descricao">Visite a cidade eterna e seus monumentos históricos.</p>
+          <p class="viagem__preco">R$ 6.500,00</p>
+        </div>
+      </div>
+      <div class="viagem">
+        <img src="img/dubaidestino.jpeg" alt="Imagem da viagem 7" class="viagem__imagem">
+        <div class="viagem__detalhes">
+          <h3 class="viagem__titulo">Dubai, Emirados Árabes</h3>
+          <p class="viagem__descricao">Experimente o luxo e a modernidade de Dubai.</p>
+          <p class="viagem__preco">R$ 10.200,00</p>
+        </div>
+      </div>
+      <div class="viagem">
+        <img src="img/riodejaneirodestino.jpeg" alt="Imagem da viagem 8" class="viagem__imagem">
+        <div class="viagem__detalhes">
+          <h3 class="viagem__titulo">Rio de Janeiro, Brasil</h3>
+          <p class="viagem__descricao">Curta as praias e a cultura vibrante do Rio de Janeiro.</p>
+          <p class="viagem__preco">R$ 2.800,00</p>
+        </div>
+      </div>
+      <div class="viagem">
+        <img src="img/bangkokdestino.jpeg" alt="Imagem da viagem 9" class="viagem__imagem">
+        <div class="viagem__detalhes">
+          <h3 class="viagem__titulo">Bangkok, Tailândia</h3>
+          <p class="viagem__descricao">Explore os templos e a gastronomia única de Bangkok.</p>
+          <p class="viagem__preco">R$ 5.700,00</p>
+        </div>
+      </div>
+      <div class="viagem">
+        <img src="img/cairodestino.jpeg" alt="Imagem da viagem 10" class="viagem__imagem">
+        <div class="viagem__detalhes">
+          <h3 class="viagem__titulo">Cairo, Egito</h3>
+          <p class="viagem__descricao">Visite as pirâmides e os tesouros do antigo Egito.</p>
+          <p class="viagem__preco">R$ 7.900,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Viagens</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Turismo</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Férias</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Pacotes</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Preço baixo</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Economia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Passeios</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Cruzeiro</a>
+      </li>
+    </ul>
+  </section>
+  
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de viagens, pacotes, promoções e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Agência de viagens</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Nossas redes</li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Instagram</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">FaceBook</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Empresas aéreas</li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Azul Brazilian Airlines</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">LATAM Airlines Group SA</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Gol Transportes Aéreos</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">TAP Air Portugal</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Voepass Linhas Aéreas</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Aerolineas Argentinas</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Copa Airlines</a>
+      </li>
+    </ul>
+    
+  </footer>
+
+
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2024 Agência de Viagens. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

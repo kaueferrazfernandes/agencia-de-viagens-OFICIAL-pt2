@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência de Viagens</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .pacotes {
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .pacotes__titulo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .pacotes__lista {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .pacote {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 300px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .pacote__imagem {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .pacote__detalhes {
+      padding: 15px;
+    }
+    .pacote__titulo {
+      font-size: 1.25em;
+      margin-bottom: 10px;
+    }
+    .pacote__descricao {
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .pacote__preco {
+      font-size: 1.5em;
+      color: #e91e63;
+    }
+  </style>
+</head>
+
+<body>
+<header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+    <li class="lista-menu__titulo">Categorias</li>
+    <li class="lista-menu__item">
+        <a href="index.html" class="lista-menu__link">Início</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="quemsomos.html" class="lista-menu__link">Quem Somos</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="pacotes.html" class="lista-menu__link">Pacotes</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="viagens.html" class="lista-menu__link">Viagens</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="contatos.html" class="lista-menu__link">Contatos</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="contatos.html" class="lista-menu__link">Contatos</a>
+    </li>
+</ul>
+      <img src="img/Logo.svg" alt="Logo da Agencia" class="container__imagem">
+      <h1 class="container__titulo">Agência de viagens</h1>
+      <b class="class__titulo--negrito"></b>
+      <ul class="opções">
+  <input type="checkbox" id="opções-menu" class="opções__botão" />
+  <label for="opções-menu">
+    <li class="opções__item">Categorias</li>
+  </label>
+
+  <ul class="lista-menu">
+    <li class="lista-menu__item">
+      <a href="index.html" class="lista-menu__link">Início</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="quemsomos.html" class="lista-menu__link">Quem somos</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="pacotes.html" class="lista-menu__link">Pacotes</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="viagens.html" class="lista-menu__link">Viagens</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="contatos.html" class="lista-menu__link">Contatos</a>
+    </li>
+</ul>
+  <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+  <li class="opções__item">
+    <a href="#" class="opções__link">Minha estante</a>
+  </li>
+</ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde viajar?</h2>
+    <p class="banner__texto">Encontre em nossa agência onde você quer passar as próximas férias!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será seu próximo destino?">
+  </section>
+
+  <section class="pacotes">
+    <h2 class="pacotes__titulo">Pacotes de Viagens</h2>
+    <div class="pacotes__lista">
+      <div class="pacote">
+        <img src="img/montanhas.jpeg" alt="Imagem do destino 1" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Montanhas Rochosas</h3>
+          <p class="pacote__descricao">Explore a majestosa paisagem das Montanhas Rochosas.</p>
+          <p class="pacote__preco">R$ 5.000,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/safarinaafrica.jpeg" alt="Imagem do destino 2" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Safári na África</h3>
+          <p class="pacote__descricao">Aventure-se em um safári emocionante e veja animais selvagens.</p>
+          <p class="pacote__preco">R$ 7.200,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/cruzeiro.jpeg" alt="Imagem do destino 3" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Cruzeiro pelo Mediterrâneo</h3>
+          <p class="pacote__descricao">Relaxe e aproveite um cruzeiro luxuoso pelo Mediterrâneo.</p>
+          <p class="pacote__preco">R$ 8.500,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/rotadosvinhos.jpeg" alt="Imagem do destino 4" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Rota dos Vinhos na França</h3>
+          <p class="pacote__descricao">Deguste vinhos excepcionais na bela região da França.</p>
+          <p class="pacote__preco">R$ 6.000,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/ilhasgregas.jpeg" alt="Imagem do destino 5" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Ilhas Gregas</h3>
+          <p class="pacote__descricao">Visite as encantadoras ilhas gregas e suas belezas naturais.</p>
+          <p class="pacote__preco">R$ 7.500,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/patagoniaargentina.jpeg" alt="Imagem do destino 6" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Patagônia Argentina</h3>
+          <p class="pacote__descricao">Descubra as paisagens deslumbrantes da Patagônia Argentina.</p>
+          <p class="pacote__preco">R$ 5.800,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/templosdojapao.jpeg" alt="Imagem do destino 7" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Templos do Japão</h3>
+          <p class="pacote__descricao">Explore a rica história e cultura do Japão através de seus templos.</p>
+          <p class="pacote__preco">R$ 9.000,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/camposdetulipa.jpeg" alt="Imagem do destino 8" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Campos de Tulipas na Holanda</h3>
+          <p class="pacote__descricao">Admire a beleza das tulipas em flor nos campos holandeses.</p>
+          <p class="pacote__preco">R$ 4.800,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/desertodosaara.jpeg" alt="Imagem do destino 9" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Deserto do Saara</h3>
+          <p class="pacote__descricao">Vivencie a imensidão e o mistério do deserto do Saara.</p>
+          <p class="pacote__preco">R$ 6.300,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/auroraboreal.jpeg" alt="Imagem do destino 10" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Aurora Boreal na Noruega</h3>
+          <p class="pacote__descricao">Testemunhe a espetacular aurora boreal no norte da Noruega.</p>
+          <p class="pacote__preco">R$ 10.000,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/aventuraamazonia.jpeg" alt="Imagem do destino 11" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Aventura na Amazônia</h3>
+          <p class="pacote__descricao">Explore a exuberante floresta amazônica com guias experientes.</p>
+          <p class="pacote__preco">R$ 3.200,00</p>
+        </div>
+      </div>
+      <div class="pacote">
+        <img src="img/turismonaeuropa.jpeg" alt="Imagem do destino 12" class="pacote__imagem">
+        <div class="pacote__detalhes">
+          <h3 class="pacote__titulo">Turismo na Europa</h3>
+          <p class="pacote__descricao">Conheça as principais cidades europeias em uma viagem inesquecível.</p>
+          <p class="pacote__preco">R$ 6.800,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Viagens</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Turismo</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Férias</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Pacotes</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Preço baixo</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Economia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Passeios</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Cruzeiro</a>
+      </li>
+    </ul>
+  </section>
+  
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de viagens, pacotes, promoções e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Agência de viagens</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Nossas redes</li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Instagram</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">FaceBook</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Empresas aéreas</li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Azul Brazilian Airlines</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">LATAM Airlines Group SA</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Gol Transportes Aéreos</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">TAP Air Portugal</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Voepass Linhas Aéreas</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Aerolineas Argentinas</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Copa Airlines</a>
+      </li>
+    </ul>
+    
+  </footer>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2024 Agência de Viagens. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

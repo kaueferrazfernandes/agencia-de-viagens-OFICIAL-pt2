@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agênciadeviagens</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link
+  href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+    <li class="lista-menu__titulo">Categorias</li>
+    <li class="lista-menu__item">
+        <a href="index.html" class="lista-menu__link">Início</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="quemsomos.html" class="lista-menu__link">Quem Somos</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="pacotes.html" class="lista-menu__link">Pacotes</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="viagens.html" class="lista-menu__link">Viagens</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="contatos.html" class="lista-menu__link">Contatos</a>
+    </li>
+    <li class="lista-menu__item">
+        <a href="contatos.html" class="lista-menu__link">Contatos</a>
+    </li>
+</ul>
+      <img src="img/Logo.svg" alt="Logo da Agencia" class="container__imagem">
+      <h1 class="container__titulo">Agência de viagens</h1>
+      <b class="class__titulo--negrito"></b>
+      <ul class="opções">
+  <input type="checkbox" id="opções-menu" class="opções__botão" />
+  <label for="opções-menu">
+    <li class="opções__item">Categorias</li>
+  </label>
+
+  <ul class="lista-menu">
+    <li class="lista-menu__item">
+      <a href="index.html" class="lista-menu__link">Início</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="quemsomos.html" class="lista-menu__link">Quem somos</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="pacotes.html" class="lista-menu__link">Pacotes</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="viagens.html" class="lista-menu__link">Viagens</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="contatos.html" class="lista-menu__link">Contatos</a>
+    </li>
+</ul>
+  <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+  <li class="opções__item">
+    <a href="#" class="opções__link">Minha viagens</a>
+  </li>
+</ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde viajar?</h2>
+    <p class="banner__texto">Encontre em nossa agência onde você quer passar as próximas férias!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será seu próximo destino?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos destinos para fora do Brasil</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/novayork.jpeg"
+            alt="imagem de nova york"></div>
+        <div class="swiper-slide"><img src="img/paris.jpeg"
+            alt="imagem de paris"></div>
+        <div class="swiper-slide"><img src="img/canada.jpeg" alt="imagem do canada">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/finlandia.jpeg" alt="imagem da finlandia" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/estadosunidos.jpeg" alt="imagem dos estados unidos" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/brasil.jpeg" alt="imagem do brasil" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Marrocos</h2>
+          <h2 class="descrição__titulo-livro">R$1.999,89</h2>
+          <p class="descrição__texto">
+            Um destino incrível pelas belezas de Marrocos.
+          </p>
+        </div>
+        <img src="img/marrocosretrato.jpeg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar viagem" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+    
+   </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">DESTINOS NO BRASIL</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/belohorizonte.jpeg"
+            alt="imagem de belo horizonte"></div>
+        <div class="swiper-slide"><img src="img/minasgerais.jpeg" alt="imagens de minas gerais">
+        </div>
+        <div class="swiper-slide"><img src="img/noronha.jpeg" alt="imagens de noronha">
+        </div>
+        <div class="swiper-slide"><img src="img/pernambuco.jpg" alt="imagem de pernambuco"></div>
+        <div class="swiper-slide"><img src="img/salvador.jpeg" alt="imagem de salvador"></div>
+        <div class="swiper-slide"><img src="img/riodejaneiro.jpeg" alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Viajante do mês</h3>
+          <h2 class="descrição__titulo-livro">Juliana Agarikov</h2>
+          <p class="descrição__texto">Muito boa a viagem, preço acessível, não vejo a hora de pegar férias de novo para comprar.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/Escritora.svg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+   </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Viagens</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Turismo</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Férias</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Pacotes</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Preço baixo</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Economia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Passeios</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Cruzeiro</a>
+      </li>
+    </ul>
+  </section>
+  
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de viagens, pacotes, promoções e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Agência de viagens</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Nossas redes</li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Instagram</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">FaceBook</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Empresas aéreas</li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Azul Brazilian Airlines</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">LATAM Airlines Group SA</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Gol Transportes Aéreos</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">TAP Air Portugal</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Voepass Linhas Aéreas</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Aerolineas Argentinas</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Copa Airlines</a>
+      </li>
+    </ul>
+    
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
